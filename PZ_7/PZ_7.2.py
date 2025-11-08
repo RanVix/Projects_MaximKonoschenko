@@ -4,6 +4,8 @@
 
 s = input("Введите строку: ")
 
+print(f"Исходная строка: {s}")
+
 words = s.split()
 words_sorted = sorted(words)
 result = ' '.join(words_sorted)
