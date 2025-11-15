@@ -14,6 +14,8 @@ try:
         if A[i] < A[9]:
             result = A[i]
             break
+        else:
+            result = 0
 
     print(result)
     
