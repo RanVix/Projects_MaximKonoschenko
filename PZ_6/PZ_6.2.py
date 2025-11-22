@@ -1,17 +1,20 @@
 # Дан список размера N. Найти номера двух ближайших элементов из этого списка (то
 # есть элементов с наименьшим модулем разности) и вывести эти номера в порядке
 # возрастания.
+import random
 
 try:
     n = int(input("Введите размер списка: "))   
     arr = []
 
     while len(arr) < n:
-        arr.append(int(input()))
+        num = random.randint(-100, 100)
+        arr.append(num)
 
     if len(arr) < 2:
         print("Нужно ввести минимум 2 элемента!")
     else:
+        print(f"Исходный список: {arr}")
         min_diff = abs(arr[1] - arr[0])
         index1, index2 = 0, 1
 
