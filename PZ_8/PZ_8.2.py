@@ -5,4 +5,5 @@ persons = {"Андрей": 178, "Виктор": 150, "Максим": 200, "Ле�
 max_person = max(persons.values())
 min_person = min(persons.values())
 
+print(f"Исходный словарь: {persons}")
 print(f"Максимальный рост: {max_person}, минимальный рост: {min_person}")
