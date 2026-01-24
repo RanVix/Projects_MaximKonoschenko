@@ -12,11 +12,11 @@ try:
         exit()
 
     total = 1.0  
-    term = 1.0
+    divide = 1.0
 
     for i in range(1, number + 1):
-        term /= i
-        total += term
+        divide /= i
+        total += divide
 
     print(total)
 

@@ -17,6 +17,7 @@ try:
     unused = A - sum_b
 
     print(f"Длина незанятой части: {unused}")
+    
 except ValueError:
     print("Вы ввели не число!")
 except Exception as e:
