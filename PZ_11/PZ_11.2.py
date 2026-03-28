@@ -1,13 +1,12 @@
-# Составить генератор (yield), который переведет символы строки из верхнего
-# регистра в нижний.
+get_lower_gen = lambda s: map(str.lower, s)
 
-text = input("Введите обрабатываемую строку: ")
-print("Исходная строка:", text)
+def main():
+    text = input("Введите обрабатываемую строку: ")
+    print(f"Исходная строка: {text}")
 
-def convert_to_lower(string):
-    for char in string:
-        yield char.lower()
+    result = ''.join(get_lower_gen(text))
+    
+    print(f"Результат: {result}")
 
-result = ''.join(convert_to_lower(text))
-
-print("Результат:", result)
+if __name__ == "__main__":
+    main()
