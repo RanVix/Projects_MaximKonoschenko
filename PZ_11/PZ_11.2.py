@@ -1,12 +1,8 @@
 get_lower_gen = lambda s: map(str.lower, s)
 
-def main():
-    text = input("Введите обрабатываемую строку: ")
-    print(f"Исходная строка: {text}")
+text = input("Введите обрабатываемую строку: ")
+print(f"Исходная строка: {text}")
 
-    result = ''.join(get_lower_gen(text))
-    
-    print(f"Результат: {result}")
+result = ''.join(get_lower_gen(text))
 
-if __name__ == "__main__":
-    main()
+print(f"Результат: {result}")
