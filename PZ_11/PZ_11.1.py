@@ -1,3 +1,6 @@
+# 1.В последовательности на n целых чисел умножить все элементы на последний
+# минимальный элемент.
+
 import random
 
 generate_seq = lambda n: [random.randint(-10, 10) for i in range(n)]
