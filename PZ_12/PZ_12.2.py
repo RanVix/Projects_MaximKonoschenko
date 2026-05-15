@@ -12,4 +12,4 @@ print("Сгенерированная матрица:")
 for row in test_matrix:
     print(row)
 
-print(f"\nСумма элементов первых двух строк: {sum_two(test_matrix)}")
+print(f"Сумма элементов первых двух строк: {sum_two(test_matrix)}")
