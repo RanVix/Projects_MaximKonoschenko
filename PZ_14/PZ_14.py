@@ -16,7 +16,7 @@ name_entry.grid(row=0, column=1, sticky="w", padx=10)
 
 # Password
 tk.Label(main_frame, text="Password").grid(row=1, column=0, sticky="w", pady=5)
-pass_entry = tk.Entry(main_frame, width=30, show="*")
+pass_entry = tk.Entry(main_frame, width=30)
 pass_entry.grid(row=1, column=1, sticky="w", padx=10)
 
 # Gender
