@@ -13,6 +13,7 @@ class Figure:
 
 class Square(Figure):
     def __init__(self, side):
+        super().__init__()
         self.side = side
 
     def area(self):
@@ -24,6 +25,7 @@ class Square(Figure):
 
 class Rectangle(Figure):
     def __init__(self, width, height):
+        super().__init__()
         self.width = width
         self.height = height
 
@@ -36,6 +38,7 @@ class Rectangle(Figure):
 
 class Circle(Figure):
     def __init__(self, radius):
+        super().__init__()
         self.radius = radius
 
     def area(self):

@@ -4,6 +4,7 @@
 class Matrix:
     def __init__(self, size, data):
         self.size = size
+        self.data = data
 
     def add(self, other):
         result = [[self.data[i][j] + other.data[i][j] for j in range(self.size)] for i in range(self.size)]
