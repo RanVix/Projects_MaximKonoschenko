@@ -6,13 +6,9 @@ DB_NAME = "employment.db"
 
 
 def print_table(title, rows):
-    print(f"\n Название операции: {title}")
-    print("   " + "-" * 105)
-    print(f"   {'ID':<4} | {'Фамилия':<12} | {'Имя':<10} | {'Отчество':<15} | {'Возраст':<7} | {'Пол':<4} | {'Профессия':<15} | {'Стаж':<6}")
-    print("   " + "-" * 105)
+    print(f"\n Название операции: {title} ")
     for row in rows:
-        print(f"   {row[0]:<4} | {row[1]:<12} | {row[2]:<10} | {row[3]:<15} | {row[4]:<7} | {row[5]:<4} | {row[6]:<15} | {row[7]:<6}")
-    print("   " + "-" * 105)
+        print(row)
 
 with sqlite3.connect(DB_NAME) as conn:
     cursor = conn.cursor()
